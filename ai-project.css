@@ -1,3 +1,13 @@
 body{
-    background: aqua;
+    background-color: lightgray;
+}
+
+.container{
+    margin: 120px auto;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 36px; 
+    line-height: 1.5;
 }
