@@ -2,6 +2,10 @@ body{
     background-color: lightgray;
 }
 
+a{
+    color: rgb(37, 112, 158);
+}
+
 .container{
     margin: 120px auto;
     max-width: 600px;
