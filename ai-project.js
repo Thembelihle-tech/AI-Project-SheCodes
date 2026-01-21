@@ -1,15 +1,36 @@
+function displayPoem(response){
+
+    console.log("poem generated");
+    new Typewriter('#poem', {
+    strings: response.data.answer,
+    autoStart: true,
+    delay: 2,
+    cursor: "",
+});
+
+}
+
 function generatePoem(event){
     event.preventDefault();
 
-    let poemElement = document.querySelector("#poem");
+    let instructionsInput = document.querySelector("#user-instructions");
 
-    new Typewriter('#poem', {
-  strings: "Come, And Be My Baby",
-  autoStart: true,
-  delay: 2,
-  cursor: "",
-});
+    //build API URL
+    let apiKey = "4686cad4bte466a10731b6f0be84037o";
 
+    let prompt = `User instructions: Generate an English poem about ${instructionsInput.value}`;
+    let context = "You are a romantic Poem expert and love to write short poems. Your mission is to generate a 5 line poem in basic HTML. Make sure to follow the user instructions below.";
+
+    //Make a call to the API
+    let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+    axios.get(apiURL).then(displayPoem);
+
+     console.log("Generating poem");
+    console.log(`Prompt: ${prompt}`);
+    console.log(`Context: ${context}`);
+    
+    
 }
 
 let poemFormElement = document.querySelector("#poem-generator-form");
