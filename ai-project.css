@@ -39,4 +39,7 @@ form{
     margin-left: 10px;
     background: lightblue;
     color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 24px;
 }
