@@ -21,4 +21,6 @@ header{
 form{
     padding: 30px;
     background: white;
+    border-radius: 10px;
+    display: flex;
 }
