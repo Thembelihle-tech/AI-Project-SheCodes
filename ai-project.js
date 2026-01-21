@@ -19,7 +19,7 @@ function generatePoem(event){
     let apiKey = "4686cad4bte466a10731b6f0be84037o";
 
     let prompt = `User instructions: Generate an English poem about ${instructionsInput.value}`;
-    let context = "You are a romantic Poem expert and love to write short poems. Your mission is to generate a 5 line poem in basic HTML. Make sure to follow the user instructions below.";
+    let context = "You are a romantic Poem writer. Output ONLY a five line poem. Do NOT include introductions, explanations, markdown, or code blocks.";
 
     //Make a call to the API
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
