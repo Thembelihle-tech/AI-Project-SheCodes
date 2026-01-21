@@ -42,3 +42,17 @@ poemFormElement.addEventListener("submit", generatePoem);
 
 let instructionsInput = document.querySelector(".instructions");
 let userPrompt = instructionsInput.value;
+
+let clearInput = document.querySelector("#clear-input");
+let textInput = document.querySelector("#user-instructions");
+
+textInput.addEventListener("input", function () {
+    clearInput.style.display = textInput.value ? "block" : "none";
+});
+
+clearInput.addEventListener("click", function () {
+    textInput.value = "";
+    clearInput.style.display = "none";
+    textInput.focus();
+});
+

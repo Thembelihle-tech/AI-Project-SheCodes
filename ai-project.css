@@ -86,3 +86,23 @@ footer{
 .poem strong{
     color:rgb(37, 112, 158);
 }
+
+.input-wrapper{
+    position: relative;
+    width: 80%;
+}
+
+#clear-input{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #999;
+    cursor: pointer;
+    display: none;
+}
+
+#clear-input:hover {
+    color: #333;
+}
