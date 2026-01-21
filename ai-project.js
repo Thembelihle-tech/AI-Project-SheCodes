@@ -26,6 +26,9 @@ function generatePoem(event){
 
     axios.get(apiURL).then(displayPoem);
 
+    let poemElement = document.querySelector("#poem");
+    poemElement.innerHTML = `Generating a poem about ${instructionsInput.value} ⏳`;
+
      console.log("Generating poem");
     console.log(`Prompt: ${prompt}`);
     console.log(`Context: ${context}`);
