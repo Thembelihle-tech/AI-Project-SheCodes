@@ -34,6 +34,13 @@ form{
     display: flex;
 }
 
+.hint{
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity:0.6;
+    font-size: 12px;
+}
+
 .instructions{
     padding: 16px;
     border: 1px solid rgb(37, 112, 158);
