@@ -6,7 +6,7 @@ function generatePoem(event){
     new Typewriter('#poem', {
   strings: "Come, And Be My Baby",
   autoStart: true,
-  delay: 1,
+  delay: 2,
   cursor: "",
 });
 
