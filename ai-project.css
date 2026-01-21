@@ -24,3 +24,8 @@ form{
     border-radius: 10px;
     display: flex;
 }
+
+.instructions{
+    padding: 16px;
+    border: 1px solid grey;
+}
