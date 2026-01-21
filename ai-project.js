@@ -4,7 +4,7 @@ function generatePoem(event){
     let poemElement = document.querySelector("#poem");
 
     new Typewriter('#poem', {
-  strings: "Come, And Be My Bab",
+  strings: "Come, And Be My Baby",
   autoStart: true,
   delay: 1,
   cursor: "",
@@ -14,3 +14,6 @@ function generatePoem(event){
 
 let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
+
+let instructionsInput = document.querySelector(".instructions");
+let userPrompt = instructionsInput.value;
